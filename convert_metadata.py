@@ -11,4 +11,4 @@ new_df = pd.DataFrame({
 })
 
 # Save to new CSV with | separator
-new_df.to_csv('metadata_three_columns.csv', sep='|', index=False, header=False)
+new_df.to_csv('metadata.csv', sep='|', index=False, header=False)
