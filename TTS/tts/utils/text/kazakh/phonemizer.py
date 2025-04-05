@@ -18,11 +18,6 @@ def init():
     }
     # Add uppercase mappings.
     mapping.update({k.upper(): v for k, v in mapping.items()})
-    # import the Java modules
-    from org.alex73.korpus.base import GrammarDB2, GrammarFinder
-
-    grammar_db = GrammarDB2.initializeFromJar()
-    finder = GrammarFinder(grammar_db)
 
 
 def kazakh_text_to_phonemes(text: str, separator: str = "") -> str:
